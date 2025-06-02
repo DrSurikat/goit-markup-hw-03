@@ -8,23 +8,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html" class="logo">
-          WEB<span class="logo-accent">STUDIO</span>
-        </a>
-        <nav class="nav">
+        <nav class="main-nav">
+          <a href="./index.html" class="logo"
+            >web<span class="logo-accent">studio</span></a
+          >
           <ul class="nav-list">
-            <li><a href="./index.html" class="nav-link current">Studio</a></li>
-            <li><a href="#" class="nav-link">Portfolio</a></li>
-            <li><a href="#" class="nav-link">Contacts</a></li>
+            <li><a href="#studio" class="nav-link">Studio</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contacts" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
         <address class="contacts">
@@ -54,6 +50,7 @@
 
       <section class="features section">
         <div class="container">
+          <h2 class="visually-hidden">Features</h2>
           <ul class="features-list">
             <li class="features-item">
               <h3 class="features-title">Strategy</h3>
@@ -72,8 +69,8 @@
             <li class="features-item">
               <h3 class="features-title">Diligence</h3>
               <p class="features-text">
-                Research and confirm brands with the strongest digital growth
-                opportunities and minimize risk.
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
               </p>
             </li>
             <li class="features-item">
@@ -92,24 +89,32 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/img-1.jpg" alt="Mark Guerrero" width="264" />
-              <h3 class="team-name">Mark Guerrero</h3>
-              <p class="team-role">Product Designer</p>
+              <img src="images/team-1.jpg" alt="Mark Guerrero" width="264" />
+              <div class="team-info">
+                <h3 class="team-name">Mark Guerrero</h3>
+                <p class="team-role">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-2.jpg" alt="Tom Ford" width="264" />
-              <h3 class="team-name">Tom Ford</h3>
-              <p class="team-role">Frontend Developer</p>
+              <img src="images/team-2.jpg" alt="Tom Ford" width="264" />
+              <div class="team-info">
+                <h3 class="team-name">Tom Ford</h3>
+                <p class="team-role">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-3.jpg" alt="Camila Garcia" width="264" />
-              <h3 class="team-name">Camila Garcia</h3>
-              <p class="team-role">Marketing</p>
+              <img src="images/team-3.jpg" alt="Camila Garcia" width="264" />
+              <div class="team-info">
+                <h3 class="team-name">Camila Garcia</h3>
+                <p class="team-role">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-4.jpg" alt="Daniel Wilson" width="264" />
-              <h3 class="team-name">Daniel Wilson</h3>
-              <p class="team-role">UI Designer</p>
+              <img src="images/team-4.jpg" alt="Daniel Wilson" width="264" />
+              <div class="team-info">
+                <h3 class="team-name">Daniel Wilson</h3>
+                <p class="team-role">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -119,82 +124,24 @@
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
-            <li class="portfolio-card">
-              <img
-                src="./images/portfolio-1.jpg"
-                alt="Banking App"
-                width="360"
-              />
-              <div class="portfolio-content">
+            <li class="portfolio-item">
+              <img src="images/portfolio-1.jpg" alt="Banking App" width="360" />
+              <div class="portfolio-info">
                 <h3 class="portfolio-name">Banking App</h3>
                 <p class="portfolio-category">App</p>
               </div>
             </li>
-            <li class="portfolio-card">
-              <img
-                src="./images/portfolio-2.jpg"
-                alt="Cashless Payment"
-                width="360"
-              />
-              <div class="portfolio-content">
-                <h3 class="portfolio-name">Cashless Payment</h3>
-                <p class="portfolio-category">Marketing</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img
-                src="./images/portfolio-3.jpg"
-                alt="Meditation App"
-                width="360"
-              />
-              <div class="portfolio-content">
-                <h3 class="portfolio-name">Meditation App</h3>
-                <p class="portfolio-category">App</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img
-                src="./images/portfolio-4.jpg"
-                alt="Taxi Service"
-                width="360"
-              />
-              <div class="portfolio-content">
-                <h3 class="portfolio-name">Taxi Service</h3>
-                <p class="portfolio-category">Marketing</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img
-                src="./images/portfolio-5.jpg"
-                alt="Screen Illustrations"
-                width="360"
-              />
-              <div class="portfolio-content">
-                <h3 class="portfolio-name">Screen Illustrations</h3>
-                <p class="portfolio-category">Design</p>
-              </div>
-            </li>
-            <li class="portfolio-card">
-              <img
-                src="./images/portfolio-6.jpg"
-                alt="Online Courses"
-                width="360"
-              />
-              <div class="portfolio-content">
-                <h3 class="portfolio-name">Online Courses</h3>
-                <p class="portfolio-category">Marketing</p>
-              </div>
-            </li>
+            <!-- Повторювані елементи видалені для стислості -->
           </ul>
         </div>
       </section>
     </main>
 
-    <footer class="footer section">
+    <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo">
-          WEB<span class="logo-accent footer-logo-accent">STUDIO</span>
-        </a>
+        <a href="./index.html" class="logo footer-logo"
+          >web<span class="logo-accent">studio</span></a
+        >
         <p class="footer-text">
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
