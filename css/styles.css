@@ -1,23 +1,7 @@
-/* === Base Styles === */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
-}
-
-/* === Reset === */
-ul,
-ol,
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
 }
 
 img {
@@ -26,27 +10,49 @@ img {
   height: auto;
 }
 
-/* === Container === */
-.container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* === Utility === */
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
+  padding: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
-/* === Header === */
+/* Header */
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -85,7 +91,15 @@ img {
 .menu-link {
   color: #2e2f42;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   padding: 24px 0;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
 }
 
 .contacts {
@@ -109,44 +123,45 @@ img {
   color: #404bbf;
 }
 
-/* === Hero Section === */
-.hero-section {
-  padding: 188px 0;
+/* Hero */
+.hero {
   background-color: #2e2f42;
+  padding: 188px 0;
   text-align: center;
 }
 
 .hero-title {
-  max-width: 496px;
-  margin: 0 auto 48px;
+  color: #ffffff;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
   display: block;
   min-width: 169px;
   height: 56px;
-  margin: 0 auto;
-  border: none;
-  background-color: var(--iris, #4d5ae5);
-  border-radius: 4px;
+  background-color: #4d5ae5;
   color: #ffffff;
-  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border: none;
+  border-radius: 4px;
+  margin: 48px auto 0;
+  cursor: pointer;
 }
 
-/* === Section Common === */
-.section {
-  padding: 120px 0;
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
 }
 
-/* === Features Section === */
+/* Features */
 .features-list {
   display: flex;
   gap: 24px;
@@ -157,22 +172,21 @@ img {
 }
 
 .features-title {
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
-/* === Team Section === */
+/* Team */
 .team-section {
   background-color: #f4f4fd;
 }
@@ -188,29 +202,25 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
-.team-text-container {
+.team-card {
   padding: 32px 0;
 }
 
 .team-name {
-  margin-bottom: 8px;
-  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-role {
-  text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
+  text-align: center;
 }
 
-/* === Portfolio Section === */
+/* Portfolio */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -222,32 +232,28 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.portfolio-content {
+.portfolio-card {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
 
 .portfolio-name {
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-category {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
 }
 
-/* === Footer === */
+/* Footer */
 .footer {
-  padding: 100px 0;
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -255,13 +261,9 @@ img {
   margin-bottom: 16px;
 }
 
-.footer .logo-accent {
-  color: #f4f4fd;
-}
-
 .footer-text {
-  max-width: 264px;
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
