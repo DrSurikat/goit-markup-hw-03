@@ -1,12 +1,23 @@
+/* === Base Styles === */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
 
+/* === Reset === */
+ul,
+ol,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 img {
@@ -15,32 +26,35 @@ img {
   height: auto;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
-}
-
+/* === Container === */
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* Header */
+/* === Utility === */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* === Header === */
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-nav {
@@ -63,20 +77,19 @@ button {
   color: #2e2f42;
 }
 
-.nav-list {
+.menu {
   display: flex;
   gap: 40px;
 }
 
-.nav-link {
+.menu-link {
+  color: #2e2f42;
   font-weight: 500;
   padding: 24px 0;
-  color: #2e2f42;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #404bbf;
+.contacts {
+  font-style: normal;
 }
 
 .contacts-list {
@@ -85,22 +98,31 @@ button {
 }
 
 .contacts-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #434455;
 }
 
-/* Hero */
-.hero {
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
+
+/* === Hero Section === */
+.hero-section {
   padding: 188px 0;
   background-color: #2e2f42;
   text-align: center;
 }
 
 .hero-title {
-  color: #ffffff;
-  font-size: 56px;
-  line-height: 1.07;
   max-width: 496px;
   margin: 0 auto 48px;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .hero-button {
@@ -109,17 +131,22 @@ button {
   height: 56px;
   margin: 0 auto;
   border: none;
-  background-color: #4d5ae5;
-  color: #ffffff;
+  background-color: var(--iris, #4d5ae5);
   border-radius: 4px;
+  color: #ffffff;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
-/* Features */
+/* === Section Common === */
 .section {
   padding: 120px 0;
 }
 
+/* === Features Section === */
 .features-list {
   display: flex;
   gap: 24px;
@@ -131,18 +158,22 @@ button {
 
 .features-title {
   margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
-/* Team */
-.team {
+/* === Team Section === */
+.team-section {
   background-color: #f4f4fd;
 }
 
@@ -153,24 +184,33 @@ button {
 
 .team-item {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 
-.team-info {
+.team-text-container {
   padding: 32px 0;
 }
 
 .team-name {
-  text-align: center;
   margin-bottom: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .team-role {
   text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
-/* Portfolio */
+/* === Portfolio Section === */
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -182,7 +222,7 @@ button {
   width: calc((100% - 48px) / 3);
 }
 
-.portfolio-info {
+.portfolio-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
@@ -190,9 +230,21 @@ button {
 
 .portfolio-name {
   margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-/* Footer */
+.portfolio-category {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* === Footer === */
 .footer {
   padding: 100px 0;
   background-color: #2e2f42;
@@ -203,7 +255,13 @@ button {
   margin-bottom: 16px;
 }
 
+.footer .logo-accent {
+  color: #f4f4fd;
+}
+
 .footer-text {
   max-width: 264px;
   color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
