@@ -86,10 +86,6 @@ img {
   gap: 40px;
 }
 
-.menu-item {
-  /* no additional styles needed */
-}
-
 .menu-link {
   text-decoration: none;
   color: #2e2f42;
